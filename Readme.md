@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Валентина Георгиенко](https://up.htmlacademy.ru/htmlcss/32/user/574491).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Панасюк](https://htmlacademy.ru/profile/sasha_oldsport).
 
 ---
 
