@@ -40,7 +40,7 @@
         </nav>
       </header>
       <main class="main-container main-catalog">
-        <div class="filter-wrapper">
+        <div class="filter-container">
           <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
@@ -125,118 +125,138 @@
         </div>
         <section class="filter-results">
           <h2 class="visually-hidden">Гостиницы с сортировкой</h2>
-          <p class="results-text">Найдено гостиниц: 38</p>
-          <form class="sorting-form">
-            <label class="visually-hidden" for="sorting">Сортировка</label>
-            <select class="select-control" id="sorting" name="sorting">
-              <option value="cheap">Сначала дешевые</option>
-              <option value="expensive">Сначала дорогие</option>
-              <option value="recommended">Сначала рекомендуемые</option>
-            </select>
-            <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
-          </form>
-          <a href="#" class="viewtype-button">
-            <span class="visually-hidden">Отображать карточки</span>
-          </a>
-          <a href="#" class="viewtype-button">
-            <span class="visually-hidden">Отображать крупный список</span>
-          </a>
-          <a href="#" class="viewtype-button viewtype-button-current">
-            <span class="visually-hidden">Отображать мелкий список</span>
-          </a>
+          <div class="sorting-container">
+            <p class="results-text">Найдено гостиниц: 38</p>
+            <form class="sorting-form">
+              <label class="visually-hidden" for="sorting">Сортировка</label>
+              <select class="select-control" id="sorting" name="sorting">
+                <option value="cheap">Сначала дешевые</option>
+                <option value="expensive">Сначала дорогие</option>
+                <option value="recommended">Сначала рекомендуемые</option>
+              </select>
+              <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
+            </form>
+            <a href="#" class="viewtype-button">
+              <span class="visually-hidden">Отображать карточки</span>
+            </a>
+            <a href="#" class="viewtype-button">
+              <span class="visually-hidden">Отображать крупный список</span>
+            </a>
+            <a href="#" class="viewtype-button viewtype-button-current">
+              <span class="visually-hidden">Отображать мелкий список</span>
+            </a>
+          </div>
           <article class="hotel-card">
             <a class="hotel-img-link" href="#"><img class="hotel-img" src="img/content/Amara-Resort-Spa.jpg" width="180" height="120" alt="Amara Resort & Spa"></a>
-            <h3 class="hotel-title">
-              <a class="hotel-title-link" href="#">Amara Resort & Spa</a>
-            </h3>
-            <span class="hotel-type">Гостиница</span>
-            <b class="hotel-price">От 4000 ₽</b>
-            <a class="button" href="#">Подробнее</a>
-            <button class="button-secondary button-small" type="button">В избранное</button>
-            <div class="hotel-star">
-              <img class="hotel-star-pic" src="img/star-icon.svg" weight="18" height="17" alt="элемент рейтинга">
-              <img class="hotel-star-pic" src="img/star-icon.svg" weight="18" height="17" alt="элемент рейтинга">
-              <img class="hotel-star-pic" src="img/star-icon.svg" weight="18" height="17" alt="элемент рейтинга">
-              <img class="hotel-star-pic" src="img/star-icon.svg" weight="18" height="17" alt="элемент рейтинга">
+            <div class="hotel-container">
+              <h3 class="hotel-title">
+                <a class="hotel-title-link" href="#">Amara Resort & Spa</a>
+              </h3>
+              <span class="hotel-type">Гостиница</span>
+              <b class="hotel-price">От 4000 ₽</b>
+              <a class="button" href="#">Подробнее</a>
+              <button class="button-secondary button-small" type="button">В избранное</button>
             </div>
-            <span class="hotel-rating">Рейтинг: 8,5</span>
+            <div class="rating-container">
+              <div class="hotel-star">
+                <img class="hotel-star-pic" src="img/star-icon.svg" weight="18" height="17" alt="элемент рейтинга">
+                <img class="hotel-star-pic" src="img/star-icon.svg" weight="18" height="17" alt="элемент рейтинга">
+                <img class="hotel-star-pic" src="img/star-icon.svg" weight="18" height="17" alt="элемент рейтинга">
+                <img class="hotel-star-pic" src="img/star-icon.svg" weight="18" height="17" alt="элемент рейтинга">
+              </div>
+              <span class="hotel-rating">Рейтинг: 8,5</span>
+            </div>
           </article>
           <article class="hotel-card">
             <a class="hotel-img-link" href="#"><img class="hotel-img" src="img/content/Desert-Quail-Inn.jpg" width="180" height="120" alt="Desert Quail Inn"></a>
-            <h3 class="hotel-title">
-              <a class="hotel-title-link" href="#">Desert Quail Inn</a>
-            </h3>
-            <span class="hotel-type">Мотель</span>
-            <b class="hotel-price">От 3000 ₽</b>
-            <a class="button" href="#">Подробнее</a>
-            <button class="button-secondary button-small" type="button">В избранное</button>
-            <div class="hotel-star">
-              <img class="hotel-star-pic" src="img/star-icon.svg" weight="18" height="17" alt="элемент рейтинга">
-              <img class="hotel-star-pic" src="img/star-icon.svg" weight="18" height="17" alt="элемент рейтинга">
-              <img class="hotel-star-pic" src="img/star-icon.svg" weight="18" height="17" alt="элемент рейтинга">
+            <div class="hotel-container">
+              <h3 class="hotel-title">
+                <a class="hotel-title-link" href="#">Desert Quail Inn</a>
+              </h3>
+              <span class="hotel-type">Мотель</span>
+              <b class="hotel-price">От 3000 ₽</b>
+              <a class="button" href="#">Подробнее</a>
+              <button class="button-secondary button-small" type="button">В избранное</button>
             </div>
-            <span class="hotel-rating">Рейтинг: 8,9</span>
+            <div class="rating-container">
+              <div class="hotel-star">
+                <img class="hotel-star-pic" src="img/star-icon.svg" weight="18" height="17" alt="элемент рейтинга">
+                <img class="hotel-star-pic" src="img/star-icon.svg" weight="18" height="17" alt="элемент рейтинга">
+                <img class="hotel-star-pic" src="img/star-icon.svg" weight="18" height="17" alt="элемент рейтинга">
+              </div>
+              <span class="hotel-rating">Рейтинг: 8,9</span>
+            </div>
             </article>
           <article class="hotel-card">
             <a class="hotel-img-link" href="#"><img class="hotel-img" src="img/content/Villas-Poko-Diablo.jpg" width="180" height="120" alt="Villas at Poco Diablo"></a>
-            <h3 class="hotel-title">
-              <a class="hotel-title-link" href="#">Villas at Poco Diablo</a>
-            </h3>
-            <span class="hotel-type">Апартаменты</span>
-            <b class="hotel-price">От 2000 ₽</b>
-            <a class="button" href="#">Подробнее</a>
-            <button class="button-secondary button-fav" type="button">В избранном</button>
-            <div class="hotel-star">
-              <img class="hotel-star-pic" src="img/star-icon.svg" weight="18" height="17" alt="элемент рейтинга">
-              <img class="hotel-star-pic" src="img/star-icon.svg" weight="18" height="17" alt="элемент рейтинга">
+            <div class="hotel-container">
+              <h3 class="hotel-title">
+                <a class="hotel-title-link" href="#">Villas at Poco Diablo</a>
+              </h3>
+              <span class="hotel-type">Апартаменты</span>
+              <b class="hotel-price">От 2000 ₽</b>
+              <a class="button" href="#">Подробнее</a>
+              <button class="button-secondary button-fav" type="button">В избранном</button>
             </div>
-            <span class="hotel-rating">Рейтинг: 9,2</span>
+            <div class="rating-container">
+              <div class="hotel-star">
+                <img class="hotel-star-pic" src="img/star-icon.svg" weight="18" height="17" alt="элемент рейтинга">
+                <img class="hotel-star-pic" src="img/star-icon.svg" weight="18" height="17" alt="элемент рейтинга">
+              </div>
+              <span class="hotel-rating">Рейтинг: 9,2</span>
+            </div>
           </article>
           <article class="hotel-card">
             <a class="hotel-img-link" href="#"><img class="hotel-img" src="img/content/Greentree-Inn.jpg" width="180" height="120" alt="Desert Quail Inn"></a>
-            <h3 class="hotel-title">
-              <a class="hotel-title-link" href="#">GreenTree Inn</a>
-            </h3>
-            <span class="hotel-type">Гостиница</span>
-            <b class="hotel-price">От 3000 ₽</b>
-            <a class="button" href="#">Подробнее</a>
-            <button class="button-secondary button-small" type="button">В избранное</button>
-            <div class="hotel-star">
-              <img class="hotel-star-pic" src="img/star-icon.svg" weight="18" height="17" alt="элемент рейтинга">
-              <img class="hotel-star-pic" src="img/star-icon.svg" weight="18" height="17" alt="элемент рейтинга">
+            <div class="hotel-container">
+              <h3 class="hotel-title">
+                <a class="hotel-title-link" href="#">GreenTree Inn</a>
+              </h3>
+              <span class="hotel-type">Гостиница</span>
+              <b class="hotel-price">От 3000 ₽</b>
+              <a class="button" href="#">Подробнее</a>
+              <button class="button-secondary button-small" type="button">В избранное</button>
             </div>
-            <span class="hotel-rating">Рейтинг: 9,2</span>
+            <div class="rating-container">
+              <div class="hotel-star">
+                <img class="hotel-star-pic" src="img/star-icon.svg" weight="18" height="17" alt="элемент рейтинга">
+                <img class="hotel-star-pic" src="img/star-icon.svg" weight="18" height="17" alt="элемент рейтинга">
+              </div>
+              <span class="hotel-rating">Рейтинг: 9,2</span>
+            </div>
           </article>
           <button class="button-secondary" type="button">Загрузить еще</button>
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a class="button-secondary" href="#">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="button-secondary" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="button-secondary" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="button-secondary" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="button-secondary" href="#">...</a>
-            </li>
-            <li class="pagination-item">
-              <a class="button-secondary" href="#">10</a>
-            </li>
-          </ul>
-          <form class="count-form">
-            <label class="count-form-label" for="display">Гостиниц на странице:</label>
-            <select class="select-control" id="display" name="display">
-              <option value="4">4</option>
-              <option value="10">10</option>
-              <option value="15">15</option>
-            </select>
-            <button class="visually-hidden" type="submit">Отобразить гостиницы</button>
-          </form>
+          <div class="pagination-container">
+            <ul class="pagination">
+              <li class="pagination-item">
+                <a class="button-secondary" href="#">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="button-secondary" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="button-secondary" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="button-secondary" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="button-secondary" href="#">...</a>
+              </li>
+              <li class="pagination-item">
+                <a class="button-secondary" href="#">10</a>
+              </li>
+            </ul>
+            <form class="count-form">
+              <label class="count-form-label" for="display">Гостиниц на странице:</label>
+              <select class="select-control" id="display" name="display">
+                <option value="4">4</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+              </select>
+              <button class="visually-hidden" type="submit">Отобразить гостиницы</button>
+            </form>
+          </div>
         </section>
         <section class="subscribe subscribe-inner">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
