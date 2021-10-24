@@ -25,7 +25,6 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 36px;
-  text-align: center;
   color: #333333;
   background-color: #F2F2F2;
 }
@@ -140,6 +139,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: center;
 }
 
 .advantages-container {
@@ -221,6 +221,7 @@ body {
 
 .search {
   padding: 0 240px;
+  text-align: center;
 }
 
 .search-lead {
@@ -234,6 +235,10 @@ body {
 }
 
 .subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 411px;
   padding: 0 200px;
   text-align: center;
   color: #ffffff;
@@ -241,12 +246,18 @@ body {
 }
 
 .subscribe-title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
 .subscribe-description {
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 0;
   line-height: 26px;
 }
 
@@ -259,6 +270,8 @@ body {
 }
 
 .inner-header-title {
+  margin: 0;
+  padding: 0;
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
@@ -281,7 +294,11 @@ body {
 }
 
 .filter-form-group {
+  margin: 0;
+  padding: 0;
+  min-width: 220px;
   border: none;
+
 }
 
 .filter-form-title {
@@ -291,7 +308,15 @@ body {
 }
 
 .filter-form-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .control-label {
@@ -311,17 +336,25 @@ body {
 .hotel-card {
   display: flex;
   width: 100%;
+  margin-bottom: 31px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .hotel-img {
-  margin-right: 36px;
-
+  width: 180px;
+  margin-right: 37px;
 }
 
 .hotel-container {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+
+.hotel-title {
+  margin: 0;
+  padding: 0;
 }
 
 .hotel-title-link {
@@ -395,6 +428,12 @@ body {
   border-radius: 4px;
 }
 
+.button-more {
+  display: block;
+  margin: 0 auto 30px;
+  width: 625px;
+}
+
 .button-small {
   font-size: 16px;
   line-height: 21px;
@@ -421,6 +460,8 @@ body {
 
 .main-footer {
   display: flex;
+  align-items: center;
+  height: 120px;
   padding: 0 72px;
 }
 
@@ -430,6 +471,8 @@ body {
 
 .footer-social-list {
   display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -462,6 +505,7 @@ body {
 .footer-contacts {
   flex-grow: 1;
   margin: 0 auto;
+  text-align: center;
 }
 
 .footer-contacts-phone {
