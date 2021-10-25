@@ -267,6 +267,7 @@ body {
   padding: 0 72px;
   color: #ffffff;
   background: #68A2CA url("../img/catalog-bg.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .inner-header-title {
