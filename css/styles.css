@@ -131,7 +131,13 @@ a.button {
 }
 
 .hotel-container a.button {
+  align-self: flex-end;
   margin: 0;
+}
+
+.hotel-container .button-small,
+.hotel-container .button-fav  {
+  align-self: flex-end;
 }
 
 a.button-search {
@@ -455,6 +461,10 @@ a.button-search {
   border-top: 1px solid #E6E6E6;
 }
 
+.hotel-img-link {
+  height: 120px;
+}
+
 .hotel-img {
   width: 180px;
   margin-right: 36px;
@@ -464,13 +474,15 @@ a.button-search {
   display: grid;
   grid-template-columns: 150px 160px;
   align-items: start;
-  gap: 9px;
+  column-gap: 9px;
   flex-grow: 1;
 }
 
 .hotel-title {
   grid-column: span 2;
   margin: 0;
+  font-size: 24px;
+  line-height: 31px;
 }
 
 .hotel-title-link {
