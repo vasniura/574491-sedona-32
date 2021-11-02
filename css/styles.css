@@ -46,6 +46,7 @@ body {
 /* Header */
 
 .main-header {
+  position: relative;
   height: auto;
   min-height: 65px;
   padding-left: 71px;
@@ -198,6 +199,10 @@ a.button-search {
   text-align: center;
 }
 
+.advantages-pic {
+  height: auto;
+}
+
 .advantages-container {
   padding: 98px 90px 77px 90px;
 }
@@ -252,7 +257,7 @@ a.button-search {
 .advantages-house, .advantages-food, .advantages-souvenir  {
   box-sizing: border-box;
   width: 400px;
-  padding: 98px 75px 77px 75px;
+  padding: 98px 90px 77px;
 }
 
 .advantages-house {
@@ -263,8 +268,7 @@ a.button-search {
 }
 
 .advantages-food {
-  padding-top: 184px;
-  padding-bottom: 89px;
+  padding: 184px 86px 89px;
   background: url("../img/food-icon.svg") no-repeat;
   background-position: center 91px;
 }
@@ -281,8 +285,12 @@ a.button-search {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
+.advantages-territory {
+  padding: 98px 84px 110px;
+}
+
 .advantages-road {
-  padding-bottom: 110px;
+  padding: 98px 84px 110px;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
