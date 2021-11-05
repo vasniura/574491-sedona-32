@@ -587,6 +587,7 @@ a.button-search {
   background-color: #83B3D3;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .pagination-item .button-secondary {
@@ -663,23 +664,31 @@ a.button-search {
 }
 
 .social-button {
+  position: relative;
   display: block;
-  width: 20px;
-  height: 20px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  width: 40px;
+  height: 40px;
+  fill: #83B3D3;
 }
 
-.tw-button {
-  background: url("../img/twitter-icon.svg") no-repeat center;
+.social-button:hover {
+  fill: #68A2CA;
 }
 
-.fb-button {
-  background: url("../img/facebook-icon.svg") no-repeat center;
+.social-button:focus {
+  outline: none;
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
-.you-button {
-  background: url("../img/youtube-icon.svg") no-repeat center;
+.social-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .footer-contacts {
