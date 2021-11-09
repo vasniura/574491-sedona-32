@@ -148,11 +148,13 @@
             <p class="results-text">Найдено гостиниц: 38</p>
             <form class="sorting-form">
               <label class="visually-hidden" for="sorting">Сортировка</label>
-              <select class="select-control" id="sorting" name="sorting">
-                <option value="cheap">Сначала дешевые</option>
-                <option value="expensive">Сначала дорогие</option>
-                <option value="recommended">Сначала рекомендуемые</option>
-              </select>
+              <div class="select">
+                <select class="select-control" id="sorting" name="sorting">
+                  <option value="cheap">Сначала дешёвые</option>
+                  <option value="expensive">Сначала дорогие</option>
+                  <option value="recommended">Сначала рекомендуемые</option>
+                </select>
+              </div>
               <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
             </form>
             <a href="#" class="viewtype-button">
@@ -276,12 +278,14 @@
               </li>
             </ul>
             <form class="count-form">
-              <label class="count-form-label" for="display">Гостиниц на странице:</label>
-              <select class="select-control" id="display" name="display">
-                <option value="4">4</option>
-                <option value="10">10</option>
-                <option value="15">15</option>
-              </select>
+              <label class="count-form-label" for="quantity">Гостиниц на странице:</label>
+              <div class="select">
+                <select class="select-control" id="quantity" name="quantity">
+                  <option value="4">4</option>
+                  <option value="10">10</option>
+                  <option value="15">15</option>
+                </select>
+              </div>
               <button class="visually-hidden" type="submit">Отобразить гостиницы</button>
             </form>
           </div>
@@ -291,6 +295,7 @@
           <p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-email">Email</label>
+            <!-- Для ошибки присвойте класс error -->
             <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
             <button class="button-secondary" type="submit">Подписаться</button>
           </form>
