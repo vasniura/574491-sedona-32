@@ -497,6 +497,7 @@ a.button-search {
   margin: 0;
   padding: 17px 22px;
   width: 600px;
+  font-family: inherit;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
@@ -812,6 +813,7 @@ a.button-search {
   display: block;
   margin: 0 auto;
   padding: 1px 10px;
+  font-family: inherit;
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
