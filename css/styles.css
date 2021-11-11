@@ -461,6 +461,8 @@ a.button-search {
   line-height: 26px;
 }
 
+/* Subscribe */
+
 .subscribe {
   display: flex;
   flex-direction: column;
@@ -485,6 +487,8 @@ a.button-search {
   margin-bottom: 15px;
   line-height: 26px;
 }
+
+/* Subscribe form */
 
 .subscribe-form {
   display: flex;
@@ -554,14 +558,14 @@ a.button-search {
   box-sizing: border-box;
   min-height: 408px;
   margin-bottom: 44px;
-  padding: 42px 72px 61px 71px;
+  padding: 42px 72px 61px 70px;
   color: #ffffff;
   background: #68A2CA url("../img/catalog-bg.jpg") no-repeat center;
   background-size: cover;
 }
 
 .inner-header {
-  margin-bottom: 45px;
+  margin-bottom: 41px;
 }
 
 .inner-header-title {
@@ -649,7 +653,6 @@ a.button-search {
 
 .filter-form {
   display: flex;
-  justify-content: space-between;
 }
 
 .filter-form-group {
@@ -658,11 +661,26 @@ a.button-search {
   border: none;
 }
 
+.fieldset-facilities {
+  width: 200px;
+  margin-right: 17px;
+}
+
+.fieldset-hometype {
+  width: 300px;
+  margin-right: 13px;
+}
+
+.fieldset-range {
+  width: 287px;
+  margin-right: 81px;
+}
+
 .filter-form-title {
   font-size: 20px;
-  line-height: 26px;
+  line-height: 1;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .filter-form-list {
@@ -671,9 +689,88 @@ a.button-search {
   list-style-type: none;
 }
 
+/* Control */
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 41px;
+}
+
+/* Mark */
+
+.control-mark {
+  position: absolute;
+  top: 25%;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.control:hover .control-mark {
+  opacity: 0.6;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: 5px;
+  right: 3px;
+  width: 13px;
+  height: 10px;
+  background: url("../img/checkmark-icon.svg") no-repeat;
+  content: "";
+}
+
+.control-input[type="checkbox"]:focus + .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 0 3px #83B3D3;
+}
+
+.control-input[type="checkbox"]:active + .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Radio */
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before,
+.control-input[type="radio"]:checked + .control-mark::after {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 10px;
+  height: 10px;
+  background: #3F5E72;
+  border-radius: 50%;
+  content: "";
+}
+
+.control-input[type="radio"]:focus + .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 0 3px #83B3D3;
+}
+
+.control-input[type="radio"]:active + .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control-label {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/* Range */
+
 .range {
   display: flex;
   flex-direction: column;
+  margin-top: 13px;
 }
 
 .range-scale {
@@ -686,7 +783,7 @@ a.button-search {
 .range-bar {
   position: absolute;
   left: 0;
-  width: 227px;
+  width: 236px;
   height: 4px;
   background-color: #ffffff;
 }
@@ -715,7 +812,7 @@ a.button-search {
   box-shadow: 0 0 0 3px #83B3D3;
 }
 
-.range-toggle:active {
+.range-bar .range-toggle:active {
   outline: none;
   box-shadow: 0 0 0 2px #83B3D3;
 }
@@ -732,6 +829,7 @@ a.button-search {
 
 .range-wrapper-inputs {
   display: flex;
+  margin-bottom: 28px;
 }
 
 .range-price-wrapper {
@@ -741,12 +839,17 @@ a.button-search {
 .filter-form-label {
   position: absolute;
   top: 5px;
-  right: 10px;
+  right: 14px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .filter-form-input {
   margin: 0;
   padding: 12px 15px 9px;
+  width: 143.5px;
+  box-sizing: border-box;
+  font-family: inherit;
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
@@ -755,11 +858,45 @@ a.button-search {
   appearance: textfield;
 }
 
+.input-min-price {
+  border-radius: 4px 0 0 4px;
+  border-right: 1px solid #FFFFFF;
+}
+
+.input-max-price {
+  border-radius: 0 4px 4px 0;
+  border-left: 1px solid #FFFFFF;
+}
+
+.filter-form-input:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.filter-form-input:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 3px #81B3D2, 0 0 0 3px #81B3D2;
+}
+
+.filter-form-input:focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
+.filter-form-input:focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 3px #81B3D2, 0 0 0 3px #81B3D2;
+}
+
+.filter-form-input:active {
+  background-color: #756257;
+}
+
 .filter-form-input::-webkit-outer-spin-button,
 .filter-form-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+/* Filter buttons */
 
 .button-container {
   display: flex;
@@ -770,7 +907,7 @@ a.button-search {
 
 .filter-button {
   display: block;
-  margin: 54px 0 19px;
+  margin: 58px 0 19px;
   padding: 13px 0 14px;
   font-family: inherit;
   font-weight: 700;
@@ -809,7 +946,6 @@ a.button-search {
   box-shadow: none;
 }
 
-
 .reset-button {
   display: block;
   margin: 0 auto;
@@ -847,10 +983,7 @@ a.button-search {
   box-shadow: none;
 }
 
-.control-label {
-  font-size: 18px;
-  line-height: 23px;
-}
+/* Hotels list */
 
 .filter-results {
   padding: 0 72px;
@@ -963,7 +1096,7 @@ a.button-search {
 }
 
 .hotel-card:first-of-type {
-  padding-top: 31px;
+  padding-top: 30px;
   border-top: 1px solid #E6E6E6;
 }
 
@@ -1112,7 +1245,7 @@ a.button-search {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding-top: 31px;
+  padding-top: 30px;
   border-top: 1px solid #E6E6E6;
 }
 
@@ -1201,7 +1334,7 @@ a.button-search {
 .button-more {
   display: block;
   margin: 0 auto 30px;
-  padding-top: 13px;
+  padding-top: 15px;
   padding-bottom: 14px;
   width: 625px;
 }
