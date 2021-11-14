@@ -238,7 +238,8 @@ body {
 a.button {
   display: block;
   box-sizing: border-box;
-  height: 37px;
+  max-width: 280px;
+  min-height: 37px;
   margin: 14px 0;
   padding: 0 35px;
   line-height: 37px;
@@ -288,6 +289,7 @@ a.button:active {
 
 a.button-search {
   height: auto;
+  max-width: 100%;
   margin: 0 auto;
   margin-top: 59px;
   padding: 12px 150px;
@@ -707,7 +709,7 @@ a.button-search {
 
 .control-mark {
   position: absolute;
-  top: 25%;
+  top: 9px;
   left: 2px;
   width: 20px;
   height: 20px;
@@ -852,7 +854,7 @@ a.button-search {
 
 .filter-form-input {
   margin: 0;
-  padding: 12px 15px 9px;
+  padding: 12px 37px 9px 15px;
   width: 143.5px;
   box-sizing: border-box;
   font-family: inherit;
@@ -1054,6 +1056,7 @@ a.button-search {
 
 .viewtype-button {
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
@@ -1159,7 +1162,6 @@ a.button-search {
 
 .hotel-title-link {
   display: block;
-  width: max-content;
   font-size: 24px;
   font-weight: 700;
   text-decoration: none;
@@ -1234,6 +1236,7 @@ a.button-search {
 
 .count-form-label {
   margin-right: 51px;
+  padding-top: 15px;
   font-size: 18px;
   line-height: 23px;
 }
@@ -1251,12 +1254,14 @@ a.button-search {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: -20px;
   padding-top: 30px;
   border-top: 1px solid #e6e6e6;
 }
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -1264,15 +1269,19 @@ a.button-search {
 .pagination-item {
   list-style-type: none;
   margin-right: 8px;
+  margin-bottom: 20px;
 }
 
 .count-form {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  max-width: 450px;
 }
 
 .count-form .select {
+  flex-shrink: 0;
   width: 160px;
+  padding-top: 3px;
 }
 
 .button-secondary {
@@ -1347,7 +1356,7 @@ a.button-search {
 
 .button-small,
 .button-fav {
-  height: 37px;
+  min-height: 37px;
   font-size: 16px;
   line-height: 21px;
 }
@@ -1416,7 +1425,8 @@ a.button-search {
 }
 
 .footer-social {
-  width: 150px;
+  min-width: 150px;
+  max-width: 200px;
   margin-top: -5px;
 }
 
@@ -1979,7 +1989,7 @@ a.button-search {
 }
 
 .search-form-input::placeholder {
-  color: #000000;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .search-adults .search-form-input,
