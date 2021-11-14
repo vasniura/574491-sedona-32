@@ -350,6 +350,8 @@ a.button-search {
 
 .advantages-container {
   padding: 98px 90px 77px 90px;
+  min-width: 400px;
+  box-sizing: border-box;
 }
 
 .advantages-town {
