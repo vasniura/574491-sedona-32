@@ -165,7 +165,7 @@ body {
   border-radius: 10px;
 }
 
-.nav-user .nav-link:hover svg {
+.nav-link:hover svg {
   fill: #756257;
 }
 
@@ -174,7 +174,7 @@ body {
   border-color: #83b3d3;
 }
 
-.nav-user .nav-link:focus svg {
+.nav-link:focus svg {
   fill: #756257;
 }
 
@@ -182,7 +182,7 @@ body {
   border-color: transparent;
 }
 
-.nav-user .nav-link:focus:not(:focus-visible) svg {
+.nav-link:focus:not(:focus-visible) svg {
   fill: #000000;
 }
 
@@ -191,7 +191,7 @@ body {
   border-color: #83b3d3;
 }
 
-.nav-user .nav-link:focus-visible svg {
+.nav-link:focus-visible svg {
   fill: #756257;
 }
 
@@ -200,7 +200,7 @@ body {
   opacity: 0.3;
 }
 
-.nav-user .nav-link:active svg {
+.nav-link:active svg {
   fill: #756257;
   opacity: 0.3;
 }
